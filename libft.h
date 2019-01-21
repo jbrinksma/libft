@@ -6,7 +6,7 @@
 /*   By: jbrinksm <jbrinksm@student.codam.nl>         +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2019/01/09 11:14:09 by jbrinksm       #+#    #+#                */
-/*   Updated: 2019/01/18 11:04:28 by jbrinksm      ########   odam.nl         */
+/*   Updated: 2019/01/21 10:53:21 by jbrinksm      ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -85,5 +85,6 @@ void				ft_lstdel(t_list **alst, void (*del)(void *, size_t));
 void				ft_lstadd(t_list **alst, t_list *new);
 void				ft_lstiter(t_list *lst, void (*f)(t_list *elem));
 t_list				*ft_lstmap(t_list *lst, t_list *(*f)(t_list *elem));
-
+size_t				ft_lst_content_size(t_list *start);
+char				*ft_lst_to_str(t_list *start, size_t total_lst_size);
 #endif
